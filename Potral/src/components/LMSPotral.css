@@ -1,0 +1,155 @@
+/* Figma Exact CSS - ThinkTests LMS Portal */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.portal-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.portal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.tt-logo {
+  width: 48px;
+  height: 48px;
+  background: #4353F0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+
+.portal-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #101828;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  margin-bottom: 4px;
+}
+
+.portal-header p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #667085;
+  line-height: 20px;
+}
+
+.portal-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  max-width: 768px;
+}
+
+.card {
+  flex: 1;
+  background: #F9FAFB;
+  border: 1px solid #E4E7EC;
+  border-radius: 12px;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  background: #FFFFFF;
+  border-color: #D0D5DD;
+  box-shadow: 0px 4px 12px rgba(16, 24, 40, 0.08);
+  transform: translateY(-1px);
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.icon-box svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-box.blue { background: #4353F0; }
+.icon-box.purple { background: #9B51E0; }
+.icon-box.green { background: #12B76A; }
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #101828;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.card span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #667085;
+  line-height: 18px;
+  display: block;
+  flex-grow: 1;
+  min-height: 36px;
+}
+
+.enter-link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.blue-text { color: #4353F0; }
+.purple-text { color: #9B51E0; }
+.green-text { color: #12B76A; }
+
+.footer-text {
+  font-size: 11px;
+  font-weight: 400;
+  color: #98A2B3;
+  line-height: 16px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+  .portal-cards {
+    flex-direction: column;
+    max-width: 352px;
+  }
+}
