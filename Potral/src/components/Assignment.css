@@ -1,0 +1,30 @@
+.assign-page{display:flex; flex-direction:column; gap:18px;}
+.assign-cards{display:grid; grid-template-columns: repeat(3,1fr); gap:14px;}
+.assign-card{background:#fff; border:1px solid #E2E8F0; border-radius:12px; padding:18px 20px; display:flex; justify-content:space-between; align-items:center;}
+.assign-card h2{font-size:20px; font-weight:700; color:#0F172A;}
+.assign-card p{font-size:13px; color:#475569; margin-top:2px;}
+.assign-icon{width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px;}
+.assign-icon.blue{background:#E0F2FE; color:#0284C7;} .assign-icon.green{background:#DCFCE7; color:#16A34A;} .assign-icon.yellow{background:#FEF9C3; color:#CA8A04;}
+
+.assign-table-card{background:#fff; border:1px solid #E2E8F0; border-radius:12px; overflow:hidden;}
+.assign-table-head, .assign-table-row{display:grid; grid-template-columns: 2.2fr 0.8fr 1.2fr 1fr 1fr; padding:12px 16px; font-size:13px; align-items:center;}
+.assign-table-head{background:#F8FAFC; color:#64748B; font-weight:500; border-bottom:1px solid #E2E8F0;}
+.assign-table-row{border-bottom:1px solid #F1F5F9; color:#1E293B;}
+.assign-table-row:last-child{border:none;}
+.row-hackathon{background:#F5F0FF !important;}
+.assign-title{font-weight:500; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+.hack-tag{font-size:10px; border:1px solid #C4B5FD; color:#6D28D9; background:#EDE9FE; padding:2px 8px; border-radius:12px; font-weight:600;}
+.topic-badge{background:#E0F2FE; color:#0369A1; padding:4px 10px; border-radius:12px; font-size:11px; font-weight:600;}
+.topic-badge.no-topic{background:transparent; color:#94A3B8; padding:0;}
+.text-purple{color:#6D28D9;}
+.status-badge{padding:4px 10px; border-radius:6px; font-size:11px; font-weight:600; border:1px solid #E2E8F0;}
+.status-not{background:#F8FAFC; color:#475569;} .status-sub{background:#EFF6FF; color:#1D4ED8; border-color:#BFDBFE;} .status-late{background:#FEF9C3; color:#854D0E; border-color:#FDE68A;} .status-approved{background:#DCFCE7; color:#166534; border-color:#BBF7D0;}
+.action-cell{display:flex; gap:12px; align-items:center;}
+.act-icon{cursor:pointer; color:#475569; font-size:13px;} .act-icon.purple{color:#6D28D9;}
+.closed-text{font-size:12px; color:#B91C1C; margin-left:4px;}
+
+@media(max-width:900px){
+  .assign-cards{grid-template-columns:1fr;}
+  .assign-table-head{display:none;}
+  .assign-table-row{grid-template-columns:1fr; gap:6px; padding:14px;}
+}
